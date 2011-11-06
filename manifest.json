@@ -1,0 +1,14 @@
+{
+  "name": "CleanReader",
+  "version": "0.1",
+  "description": "More usable look for Google Reader. Drop the top bars and use a nicer serif font for posts.",
+  "icons": { "16": "icon16.png",
+             "128": "icon128.png" },
+  "content_scripts": [ {
+    "matches": ["http://www.google.com/reader/*", "https://www.google.com/reader/*"],
+    "js": ["jquery-1.4.4.min.js", "cleanreader.user.js"],
+    "css": ["cleanreader.css"],
+    "run_at": "document_end",
+    "all_frames": true
+  }]
+}

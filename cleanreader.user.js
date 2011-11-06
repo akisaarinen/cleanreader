@@ -2,6 +2,7 @@ function addButton() {
     $("#lhn-add-subscription-section").append('<div id="toggle-search-button" role="button" class="goog-inline-block jfk-button jfk-button-action" tabindex="1" style="-webkit-user-select: none; " title="Search"><img src="//ssl.gstatic.com/ui/v1/button/search-white.png" style="width: 21px; height: 21px; " class="jfk-button-img"></div>');
     $("#toggle-search-button").click(function() {
       $("#top-bar").toggle();
+      $("#gb").toggle();
     });
 }
 function addStyles() {

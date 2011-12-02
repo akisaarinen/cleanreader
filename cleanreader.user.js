@@ -9,11 +9,17 @@ function addStyles() {
         "#top-bar, #gb, #logo-section { display: none; } " +
         "#viewer-header, #lhn-add-subscription-section, #sections-header { height: 35px; } " +
         "#home-section { padding: 0; } " + 
-        "#lhn-add-subscription { margin-top: -31px; } " +
         ".lhn-section-primary { line-height: 21px; } " +
         "#reading-list-unread-count { margin-top: 0; } " + 
         "#viewer-entries-container { height: 100%; } " + 
         "#scrollable-sections { height: 100%; } ";
+
+    // Work with both new and old styles
+    var hasLogoSection = $("#logo-section").length == 1;
+    if (hasLogoSection) {
+        styles += "#lhn-add-subscription { margin-top: -31px; } ";
+    }
+
     $("head").append('<style type="text/css">' + 
             styles + 
             '</style>');

@@ -1,6 +1,6 @@
 {
   "name": "CleanReader",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "More usable look for Google Reader. Drop the top bars and use a nicer serif font for posts.",
   "icons": { "16": "icon16.png",
              "128": "icon128.png" },
